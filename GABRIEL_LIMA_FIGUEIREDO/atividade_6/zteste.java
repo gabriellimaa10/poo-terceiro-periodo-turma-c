@@ -30,20 +30,30 @@ gerente1.apresentarse();
 
 
   minhaLoja.apresenteSe();
+  System.out.println("    NUMERO DE VENDEDORES E CLIENTELA      ");
+  System.out.println(" ");
+  System.out.println("vendedores: " + minhaLoja.contarVendedores()) ;
 
-  System.out.println("Número de vendedores: " + minhaLoja.contarVendedores()) ;
+  System.out.println("clientes: " + minhaLoja.contarClientes()) ;
 
-  System.out.println("Número de clientes: " + minhaLoja.contarClientes()) ;
+  System.out.println("-----------------------------------------");
+  System.out.println("     FICHA DE CADASTRO - VENDEDORES         ");
+  System.out.println(" ");
 
   for (Vendedor vendedor : minhaLoja.vendedores) {
     vendedor.apresentarSe();
     System.out.println("Média de salários: " + vendedor.calcularMedia());
     System.out.println("Bônus: " + vendedor.calcularBonus());
     System.out.println();
-
+   
   }
+  
 
   for(Cliente cliente : minhaLoja.clientes) {
+    System.out.println("-----------------------------------------");
+    System.out.println("     FICHA DE CADASTRO - CLIENTES         ");
+    System.out.println(" ");
+
     cliente.apresenteSe();
     System.out.println();
   }

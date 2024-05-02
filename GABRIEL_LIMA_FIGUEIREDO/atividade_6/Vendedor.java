@@ -21,6 +21,7 @@ public class Vendedor {
         System.out.println("Nome: " + name);
         System.out.println("Idade: " + age);
         System.out.println("Loja: " + store);
+    
     }
 
     public float calcularMedia() {
