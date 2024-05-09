@@ -4,6 +4,7 @@ import list5.domain.Cliente;
 import list5.domain.Loja;
 import list5.domain.Vendedor;
 
+import java.net.http.HttpResponse;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class CalduladoraLojaTest01 {
@@ -81,7 +82,6 @@ public class CalduladoraLojaTest01 {
 
         System.out.println(vendedor01.calcularBonus());
         System.out.println(vendedor02.calcularBonus());
-
 
         System.out.println("\n---------- Contar Clientes ---------");
         System.out.println(loja01.contarClientes());
