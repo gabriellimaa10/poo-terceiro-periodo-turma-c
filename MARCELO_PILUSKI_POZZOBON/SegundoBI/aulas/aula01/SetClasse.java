@@ -19,6 +19,6 @@ public class SetClasse {
 
             nomeNaoRepetidos.add("João");
 
-            nomeNaoRepetidos.forEach(item -> System.out.println(item)); //Arrow function é com - ao invés de =
+            nomeNaoRepetidos.forEach(item -> System.out.println(item)); // Arrow function é com - ao invés de =
       }
 }
