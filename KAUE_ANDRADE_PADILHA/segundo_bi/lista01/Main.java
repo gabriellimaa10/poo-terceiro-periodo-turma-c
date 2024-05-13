@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Main {
   public static void main(String[] args) {
@@ -76,7 +77,7 @@ public class Main {
   }
 
   public static void atv4() {
-    PriorityQueue<String> animes = new PriorityQueue<>(); // Orderna em ordem alfabética
+    Queue<String> animes = new PriorityQueue<>(); // Orderna em ordem alfabética
 
     animes.add("Jujutsu Kaisen");
     animes.add("Kimetsu no Yaiba");
