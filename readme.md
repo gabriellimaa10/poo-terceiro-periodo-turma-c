@@ -1,22 +1,45 @@
+# Destaques do Repo - Primeiro BI🏆
+
+Abaixo a lista dos melhores alunos que colaboram com este repositório. Os alunos se destacaram na qualidade de suas entregas, comprometimento em sala e compreensão do conteúdo de Programação Orientada a Objetos.
+
+* **Bernardo Vascelai Smarczewski**
+* Gabriel De Lima Figueiredo
+* Giullia Ortiz Vilanova
+* Guilherme Dudu Berti
+* Igor Felipe Lemes Da Silva
+* **João Vítor Gonçalves Da Costa**
+* **Kauê Andrade Padilha**
+* Kauê Orlandini
+* **Marcelo Piluski Pozzobon**
+* **Rafael Roani Gonçalves**
+* **Ricardo Diniz Silva**
+
+Caso você esteja nesse pódio, você está no caminho certo! Continue se esforçando! Seu eu do futuro irá lhe agradecer.
+
+---
+
 # ☕ Desenvolvimento Orientado a Objetos
 
 ### Comandos GIT
 
 IMPORTANTE ESTAR com o GITBASH NA PASTA DO REPO(eng-soft-poo-terceiro-periodo)
 
-Clonar o repo localmente
+Clonar o repo localmente(SOMENTE SE NÃO TEM O REPO LOCALMENTE)
 > git clone + link do repo
+
+Puxar as alterações do repositório(LAMBRAR DE DAR SYNC NO SEU FORK!)
+> git pull
 
 Adicionar alterações
 > git add .
 
 Adicionar comitar localmente arquivos alterados
-> git commit -m
+> git commit -m "mensagem do commit"
 
 Enviar para upstream(repositório remoto)
 > git push
 
-CASO USUÁRIO NÃO CONFIGURADO
+**CASO USUÁRIO NÃO CONFIGURADO**
 
 Configurar usuário global na máquina
 > git config --global user.name "nomeUSerGit"
@@ -28,7 +51,7 @@ REMOVER USUÁRIO DO GIT DA MÁQUINA CASO NÃO ESTEJA NO SEU COMPUTADOR PESSOAL
 
 > git config --global --unset user.name
 
-> git config --global --unset user.email
+>   
 
 BUSCAR POR Gerenciador de Credenciais no windows e remover o acesso dado ao GIT
 
