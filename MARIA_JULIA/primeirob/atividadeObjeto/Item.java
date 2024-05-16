@@ -1,4 +1,4 @@
-package atividadeObjeto;
+package primeirob.atividadeObjeto;
 
 // 4. Criar uma classe Item com:
 // - Atribuitos id, nome, tipo, valor.

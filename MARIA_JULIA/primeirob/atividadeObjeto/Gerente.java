@@ -1,4 +1,4 @@
-package atividadeObjeto;
+package primeirob.atividadeObjeto;
 
 // 1. Crie um classe Gerente:
 // - Com os atributos nome, idade, Loja, cidade, bairro, rua, salarioBase e salarioRecebido.

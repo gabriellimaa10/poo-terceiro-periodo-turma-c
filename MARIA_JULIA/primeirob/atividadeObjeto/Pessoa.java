@@ -1,4 +1,4 @@
-package atividadeObjeto;
+package primeirob.atividadeObjeto;
 
 // 2. Crie uma classe Endereco com:
 // - Com os atributos estado, cidade, bairro, numero e complemento.

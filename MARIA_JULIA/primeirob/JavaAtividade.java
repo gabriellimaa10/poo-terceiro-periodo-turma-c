@@ -1,3 +1,4 @@
+package primeirob;
 // A calculadora deve ser capaz de realizar as seguintes operações:
 
 // 1. Cálculo de Preço Total:
