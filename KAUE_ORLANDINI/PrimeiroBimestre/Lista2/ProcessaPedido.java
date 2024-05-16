@@ -1,4 +1,4 @@
-package KAUE_ORLANDINI.Lista2;
+package KAUE_ORLANDINI.PrimeiroBimestre.Lista2;
 
 import java.util.Date;
 import java.util.Scanner;

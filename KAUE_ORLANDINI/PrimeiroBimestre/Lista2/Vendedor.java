@@ -1,4 +1,4 @@
-package KAUE_ORLANDINI.Lista2;
+package KAUE_ORLANDINI.PrimeiroBimestre.Lista2;
 
 public class Vendedor {
     double[] salarioR = new double[2];
