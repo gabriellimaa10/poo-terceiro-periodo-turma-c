@@ -1,4 +1,4 @@
-package lista07;
+package RICARDO_DINIZ_SILVA.Lista7;
 
 import java.util.Scanner;
 
