@@ -15,6 +15,26 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
         // Atv 01
+        atv01();
+
+        // Atv 02
+        atv02();
+
+        // Atv 03
+        atv03();
+
+        // Atv 04
+        atv04();
+
+        // Atv 05
+        Scanner optionScanner = new Scanner(System.in);
+        int option = 0;
+        Scanner subOptionScanner = new Scanner(System.in);
+        int subOption = 0;
+        atv05(optionScanner, option, subOptionScanner, subOption);
+    }
+
+    public static void atv01() {
         List<String> alunos = new ArrayList<>();
 
         alunos.add("Gonçalves");
@@ -24,8 +44,9 @@ public class Main {
         alunos.add("Artur Lion");
 
         alunos.forEach(item -> System.out.println(item.charAt(0) + " - " + item));
+    }
 
-        // Atv 02
+    public static void atv02() {
         HashSet<Integer> numerosInteiros = new HashSet<>();
         Integer numeroEscolhido;
         numeroEscolhido = 2;
@@ -39,14 +60,38 @@ public class Main {
         numerosInteiros.add(2);
 
         numerosInteiros.forEach(item -> System.out.println(item.equals(numeroEscolhido)));
+    }
 
-        // Atv 03
+    public static void atv03() {
+        List<String> jogosZerados = new ArrayList<>();
 
-        // Atv 04
-        atv04();
+        jogosZerados.add("Bioshock Infinite");
+        jogosZerados.add("Mario World");
+        jogosZerados.add("Resident Evil 4");
+        jogosZerados.add("Mario World");
+        jogosZerados.add("Hollow Knight");
+        jogosZerados.add("Hollow Knight");
+        jogosZerados.add("Cuphead");
+        jogosZerados.add("Marvel's SpiderMan");
+        jogosZerados.add("Elden Ring");
+        jogosZerados.add("Sonic Generations");
+        jogosZerados.add("A Hat in Time");
 
-        // Atv 05
-
+        jogosZerados.stream().distinct().forEach(game -> System.out.println(game));
+        /*boolean jogoPassou = false;
+        for (int i = 0; i < jogosZerados.size(); i++) {
+            jogoPassou = false;
+            String currentGame = jogosZerados.get(i);
+            for (int j = 0; j < i; j++) {
+                if (currentGame.equals(jogosZerados.get(j))) {
+                    jogoPassou = true;
+                    break;
+                }
+            }
+            if (!jogoPassou) {
+                System.out.println(currentGame);
+            }
+        }*/
     }
 
     public static void atv04() {
@@ -63,128 +108,46 @@ public class Main {
 
     public static void atv05(Scanner operationOptionScan, int operationOption, Scanner subOperationOptionScan,
             int subOperationOption) {
+        Map<Integer, String> computador = new HashMap<>();
         Map<String, String> pecasComputador = new HashMap<>();
         Scanner pecaAdicionadaScan = new Scanner(System.in);
         String pecaAdicionada;
-        /*
-         * pecasComputador.put("Processador","Intel Core i5-12600K");
-         * pecasComputador.put("Placa de Vídeo","AMD Radeon RX 6800 XT");
-         * pecasComputador.put("Placa Mãe","Gigabyte Aorus X570 Pro WiFi");
-         * pecasComputador.put("Memória RAM","Corsair Vengeance LPX 16GB DDR5-5200 CL40"
-         * );
-         * pecasComputador.put("Fonte","Corsair 800W");
-         */
+        String buscaNomePecaMap;
+
+        computador.put(1, "Processador");
+        computador.put(2, "Placa de Vídeo");
+        computador.put(3, "Placa Mãe");
+        computador.put(4, "Memória RAM");
+        computador.put(5, "Fonte");
 
         do {
             System.out.print("[1] - Adicionar peça\n[2] - Listar peça\n[3] - Sair");
             operationOption = operationOptionScan.nextInt();
             switch (operationOption) {
                 case 1:
-                    System.out.print("Qual peça deseja adicionar?\n   [1] - Processador\n   [2] - Placa de Vídeo\n   [3] - Placa Mãe\n   [4] - Memória RAM\n   [5] - Fonte\nResposta: ");
+                    System.out.print(
+                            "Qual peça deseja adicionar?\n   [1] - Processador\n   [2] - Placa de Vídeo\n   [3] - Placa Mãe\n   [4] - Memória RAM\n   [5] - Fonte\nResposta: ");
                     subOperationOption = subOperationOptionScan.nextInt();
+                    buscaNomePecaMap = computador.get(subOperationOption); // Basicamente o HashMap das peças e outro
+                                                                           // das peças adicionadas
                     System.out.print("Nome da peça: ");
                     pecaAdicionada = pecaAdicionadaScan.next();
-                    pecasComputador.put("", pecaAdicionada);
+                    pecasComputador.put(buscaNomePecaMap, pecaAdicionada);
                     break;
 
                 case 2:
-
+                    System.out.print(
+                            "Qual peça deseja visualizar?\n   [1] - Processador\n   [2] - Placa de Vídeo\n   [3] - Placa Mãe\n   [4] - Memória RAM\n   [5] - Fonte\nResposta: ");
+                    subOperationOption = subOperationOptionScan.nextInt();
+                    subOperationOption = subOperationOptionScan.nextInt();
+                    buscaNomePecaMap = computador.get(subOperationOption); // Basicamente o HashMap das peças e outro
+                                                                           // das peças adicionadas
+                    System.out.println(pecasComputador.get(buscaNomePecaMap));
                     break;
 
                 default:
                     break;
             }
         } while (operationOption != 3);
-
-        /*
-         * do {
-         * System.out.
-         * print("Voce deseja:\n   [1] - Adicionar Peças\n   [2] - Visualizar Peças\nResposta:"
-         * );
-         * operationOption = operationOptionScan.nextInt();
-         * switch (operationOption) {
-         * case 1:
-         * System.out.print(
-         * "Qual peça deseja adicionar?\n   [1] - Processador\n   [2] - Placa de Vídeo\n   [3] - Placa Mãe\n   [4] - Memória RAM\n   [5] - Fonte\nResposta: "
-         * );
-         * switch (subOperationOption) {
-         * case 1:
-         * System.out.print("Nome da peça: ");
-         * pecaAdicionada = pecaAdicionadaScan.next();
-         * pecasComputador.put("Processador", pecaAdicionada);
-         * break;
-         * case 2:
-         * System.out.print("Nome da peça: ");
-         * pecaAdicionada = pecaAdicionadaScan.next();
-         * pecasComputador.put("Placa de Vídeo", pecaAdicionada);
-         * break;
-         * 
-         * case 3:
-         * System.out.print("Nome da peça: ");
-         * pecaAdicionada = pecaAdicionadaScan.next();
-         * pecasComputador.put("Placa Mãe", pecaAdicionada);
-         * break;
-         * 
-         * case 4:
-         * System.out.print("Nome da peça: ");
-         * pecaAdicionada = pecaAdicionadaScan.next();
-         * pecasComputador.put("Memória RAM", pecaAdicionada);
-         * break;
-         * 
-         * case 5:
-         * System.out.print("Nome da peça: ");
-         * pecaAdicionada = pecaAdicionadaScan.next();
-         * pecasComputador.put("Fonte", pecaAdicionada);
-         * break;
-         * 
-         * default:
-         * System.out.println("RESPOSTA ERRADA, digite novamente!!!!!!!");
-         * break;
-         * }
-         * break;
-         * 
-         * case 2:
-         * System.out.print(
-         * "Qual peça deseja visuailzar?\n   [1] - Processador\n   [2] - Placa de Vídeo\n   [3] - Placa Mãe\n   [4] - Memória RAM\n   [5] - Fonte\nResposta: "
-         * );
-         * switch (subOperationOption) {
-         * case 1:
-         * try{
-         * System.out.println(pecasComputador.get("Processador"));
-         * } catch (Exception e) {
-         * System.out.println("Não foram salvas configurações para esta peça.")
-         * }
-         * 
-         * break;
-         * case 2:
-         * System.out.println(pecasComputador.get("Placa de Vídeo"));
-         * break;
-         * 
-         * case 3:
-         * System.out.println(pecasComputador.get("Placa Mãe"));
-         * break;
-         * 
-         * case 4:
-         * System.out.println(pecasComputador.get("Memória RAM"));
-         * break;
-         * 
-         * case 5:
-         * System.out.println(pecasComputador.get("Fonte"));
-         * break;
-         * 
-         * default:
-         * System.out.println("RESPOSTA ERRADA, digite novamente!!!!!!!");
-         * break;
-         * 
-         * }
-         * 
-         * break;
-         * 
-         * default:
-         * break;
-         * }
-         * 
-         * } while (operationOption != 6);
-         */
     }
 }
