@@ -1,28 +1,16 @@
-package Dona_Gabi.Myy_Plant;
+package PrimeiroB.Ana_Castela;
 
-public class Item {
-    private Integer id;
+public class Evento {
     private String nome;
+    private String cantor;
     private String tipo;
     private Double valor;
 
-    public Item(Integer id, String nome, String tipo, Double valor) {
-        this.id = id;
+    public Evento(String nome, String cantor, String tipo, Double valor) {
         this.nome = nome;
+        this.cantor = cantor;
         this.tipo = tipo;
         this.valor = valor;
-    }
-
-    public void gerarDescricao() {
-        System.out.println("ID: " + id + ", Nome: " + nome + ", Tipo: " + tipo + ", Valor: " + valor);
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getNome() {
@@ -31,6 +19,14 @@ public class Item {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getCantor() {
+        return cantor;
+    }
+
+    public void setCantor(String cantor) {
+        this.cantor = cantor;
     }
 
     public String getTipo() {
