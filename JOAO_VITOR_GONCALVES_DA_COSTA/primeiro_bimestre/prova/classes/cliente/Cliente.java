@@ -1,7 +1,7 @@
-package JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.cliente;
+package prova.classes.cliente;
 
-import JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.endereco.Endereco;
-import JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.ingresso.Ingresso;
+import prova.classes.endereco.Endereco;
+import prova.classes.ingresso.Ingresso;
 
 public class Cliente {
 

@@ -1,8 +1,8 @@
-package JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.eventinho;
+package prova.classes.eventinho;
 
 import java.util.Date;
 
-import JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.endereco.Endereco;
+import prova.classes.endereco.Endereco;
 
 public class Eventinho {
 
