@@ -1,12 +1,12 @@
 package lista5;
 
 public class Item {
-
     private int id;
     private String nome;
     private String tipo;
     private double valor;
 
+    // Construtor
     public Item(int id, String nome, String tipo, double valor) {
         this.id = id;
         this.nome = nome;
@@ -14,13 +14,7 @@ public class Item {
         this.valor = valor;
     }
 
-    public void gerarDescricao() {
-        System.out.println("ID: " + id);
-        System.out.println("Nome: " + nome);
-        System.out.println("Tipo: " + tipo);
-        System.out.println("Valor: " + valor);
-    }
-
+    // Getters e Setters
     public int getId() {
         return id;
     }
@@ -51,5 +45,13 @@ public class Item {
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    // Método para gerar a descrição do item
+    public void gerarDescricao() {
+        System.out.println("ID: " + id);
+        System.out.println("Nome: " + nome);
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Valor: " + valor);
     }
 }

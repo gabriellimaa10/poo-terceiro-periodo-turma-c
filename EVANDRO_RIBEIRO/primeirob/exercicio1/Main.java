@@ -15,6 +15,8 @@ public class Main {
     String escolha;
     float desconto;
 
+    //cadastro de cliente, cadastro de evento, listar evnetos, comprar inbgresso do evento, utilizar ingresso em evento, utilização de conceitos de pOO, separação de classes e encapsulamento
+
     public static void main(String[] args) {
         Main main = new Main();
         main.scanner = new Scanner(System.in);
