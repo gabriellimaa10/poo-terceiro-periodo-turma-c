@@ -16,16 +16,16 @@ public class Main {
         numInt.forEach(number -> System.out.print(number + ", "));
 
         System.out.println("\nATV 3___");
-        unificarJogosZerados();
+        atvTres();
 
         System.out.println("\nATV 4___");
-        organizarSeriesAnimes();
+        atvQuatro();
 
         System.out.println("\nATV 5___");
-        salvarConfig();
+        atvCinco();
     }
 
-    public static void unificarJogosZerados() {
+    public static void atvTres() {
         List<String> jogosZerados = new ArrayList<>();
         jogosZerados.add("GTA SA");
         jogosZerados.add("GTA SA");
@@ -39,7 +39,7 @@ public class Main {
         jogosZeradosUnicos.forEach(System.out::println);
     }
 
-    public static void organizarSeriesAnimes() {
+    public static void atvQuatro() {
         Queue<String> melhoresAnimesSeries = new PriorityQueue<>();
         melhoresAnimesSeries.add("Naruto");
         melhoresAnimesSeries.add("Dragon Ball");
@@ -49,7 +49,7 @@ public class Main {
         melhoresAnimesSeries.forEach(System.out::println);
     }
 
-    public static void salvarConfig() {
+    public static void atvCinco() {
         Map<String, String> configuracoes = new HashMap<>();
         configuracoes.put("I5 2.5GHz", "700.00");
         configuracoes.put("RTX 3050", "2.000.00");
