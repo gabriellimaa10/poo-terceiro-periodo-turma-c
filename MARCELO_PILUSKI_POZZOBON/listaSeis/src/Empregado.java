@@ -8,10 +8,7 @@ public class Empregado {
     public Double salarioBase;
     public Double[] salarioRecebido = new Double[99];
     public Double[] bonusMensal = new Double[99];
-    
-    public Empregado(Endereco endereco) { // Construtor com parâmetro Endereco
-        this.endereco = endereco;
-    }
+    public Endereco endereco = new Endereco();
 
     public Endereco getEndereco() {
         return endereco;
@@ -22,8 +19,6 @@ public class Empregado {
     }
 
     public void apresentarse() {
-        System.out.println("Olá, eu sou o " + this.nome + ", moro na cidade " + endereco.getCidade() + ", no bairro "
-                + endereco.getBairro()
-                + ", na rua " + endereco.getRua() + "!");
+        System.out.println("Olá, eu sou o " + this.nome + ", e tenho " + idade + " anos de idade.");
     }
 }
