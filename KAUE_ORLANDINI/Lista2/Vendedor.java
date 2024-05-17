@@ -1,6 +1,7 @@
 package KAUE_ORLANDINI.Lista2;
 
 
+
 public class Vendedor {
     double[] salarioR = new double[2];
 
@@ -18,15 +19,15 @@ public class Vendedor {
 
     public Double salarioB;
 
-    public Double mediasalarios;
+    public Double mediaSalarios;
 
     void apresentarse() {
         System.out.println("nome: ".concat(nome).concat(", idade: ").concat(idade).concat(", loja: ").concat(loja));
     }
 
     void calcularMedia() {
-        mediasalarios = (salarioR[0] + salarioR[1] + salarioR[2])/3;  
-        System.out.println(mediasalarios);
+        mediaSalarios = (salarioR[0] + salarioR[1] + salarioR[2])/3;  
+        System.out.println(mediaSalarios);
     }
 
    
