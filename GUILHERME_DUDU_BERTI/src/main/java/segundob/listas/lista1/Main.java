@@ -13,7 +13,7 @@ public class Main {
         HashSet<Integer> numInt = new HashSet<>(List.of(1, 2, 3, 4, 5, 6, 5, 3, 1));
         System.out.println("Existe o número 3? " + numInt.contains(3));
         System.out.println("Lista de números: ");
-        numInt.forEach(System.out::println);
+        numInt.forEach(number -> System.out.print(number + ", "));
 
         System.out.println("\nATV 3___");
         unificarJogosZerados();
