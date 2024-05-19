@@ -1,4 +1,4 @@
-package atividade_6;
+package bimestre_1.atividade_6;
 
 public class Gerente {
 
@@ -20,11 +20,13 @@ public class Gerente {
 
   }
   public void apresentarse() {
-
-  System.out.println("Nome Gerente: " + name);
-  System.out.println("Idade Gerente: " + age);
-  System.out.println("Loja em que atua: " + store);
-
+    System.out.println("-----------------------------------------");
+    System.out.println("      INFORMAÇÕES DO GERENTE                ");
+    System.out.println(" ");
+   System.out.println("Nome Gerente: " + name);
+   System.out.println("Idade Gerente: " + age);
+   System.out.println("Loja em que atua: " + store);
+   System.out.println("-----------------------------------------");
   }
 
   public float calcularMedia() {

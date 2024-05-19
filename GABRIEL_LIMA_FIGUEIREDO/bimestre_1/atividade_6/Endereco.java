@@ -1,4 +1,4 @@
-package atividade_6;
+package bimestre_1.atividade_6;
 
 public class Endereco {
   private String state;
@@ -20,6 +20,7 @@ public class Endereco {
  public void apresentarLogradouro() {
 
   System.out.println(number + ", " + complement + ", " + neighborhood + ", " + city + ", " + state);
+
  }
 
  public String getState() {

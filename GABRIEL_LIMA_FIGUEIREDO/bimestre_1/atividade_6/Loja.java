@@ -1,4 +1,4 @@
-package atividade_6;
+package bimestre_1.atividade_6;
 
 import java.util.ArrayList;
 
@@ -34,13 +34,13 @@ public int contarVendedores() {
 }
 
 public void apresenteSe() {
-
+  System.out.println("          ENDEREÇO DA LOJA:           ");
+  System.out.println(" ");
   System.out.println("Nome fictício: " + fantasyName);
-
   System.out.println("CNPJ: " + cnpj);
-
+  System.out.println("endereço da Matriz:");
  this.endereco.apresentarLogradouro();
-
+ System.out.println("-----------------------------------------");
 }
 
 public void incluirVendedor(Vendedor vendedor) {

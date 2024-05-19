@@ -1,4 +1,4 @@
-package atividade_6;
+package bimestre_1.atividade_6;
 
 public class Vendedor {
     private String name;
@@ -21,6 +21,7 @@ public class Vendedor {
         System.out.println("Nome: " + name);
         System.out.println("Idade: " + age);
         System.out.println("Loja: " + store);
+    
     }
 
     public float calcularMedia() {

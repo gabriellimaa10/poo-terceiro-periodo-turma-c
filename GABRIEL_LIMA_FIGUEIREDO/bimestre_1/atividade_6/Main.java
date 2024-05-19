@@ -1,4 +1,4 @@
-package atividade_6;
+package bimestre_1.atividade_6;
 
 public class Main {
 

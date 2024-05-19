@@ -1,4 +1,4 @@
-package atividade_6;
+package bimestre_1.atividade_6;
 
 import java.util.Date;
 
@@ -30,7 +30,7 @@ public class ProcessoP {
         ProcessoP processador = new ProcessoP();
 
         
-        Date dataCriacao = new Date(System.currentTimeMillis() - 3 * 24 * 60 * 60 * 1000); // 3 dias atrás
+        Date dataCriacao = new Date(System.currentTimeMillis() - 3 * 24 * 60 * 60 * 1000);
         processador.processar(1, dataCriacao, "Cliente", "Vendedor", "Loja", itens);
 
        

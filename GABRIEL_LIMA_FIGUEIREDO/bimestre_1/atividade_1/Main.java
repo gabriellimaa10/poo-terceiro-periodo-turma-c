@@ -1,16 +1,13 @@
-package atividade_2;
+package bimestre_1.atividade_1;
+
 
 import java.util.Scanner;
 
 public class Main {
-public static String produtosVetor[] = new String[10];
-public static int index = 0;
+
     public static Scanner scanner = new Scanner(System.in);;
 
-
-
     public static void main(String[] args) {
-
 
         while (true) {
             exibirMenu();
@@ -23,11 +20,7 @@ public static int index = 0;
                 case 2:
                     calcularTroco();
                     break;
-
                 case 3:
-                    verHistorico();
-                    break;
-                case 4:
                     System.out.println("Saindo do programa.");
                     System.exit(0);
                     scanner.close();
@@ -43,10 +36,8 @@ public static int index = 0;
         System.out.println("\nMenu:");
         System.out.println("[1] - Calcular Preço Total");
         System.out.println("[2] - Calcular Troco");
-        System.out.println("[3] Ver histórico");
-        System.out.println("[4] - Sair");
-        System.out.print("Escolha uma opção (1, 2, 3, 4): ");
-       
+        System.out.println("[3] - Sair");
+        System.out.print("Escolha uma opção (1, 2, ou 3): ");
     }
 
     public static void calcularPrecoTotal() {
@@ -58,46 +49,9 @@ public static int index = 0;
         double precoUnitario = scanner.nextDouble();
 
         double resultado = quantidade * precoUnitario;
-
-        double descontoTotal;
-        if (quantidade > 10) {
-            
-            descontoTotal = resultado * 0.05; 
-            resultado -= descontoTotal; 
-
-            System.out.println("Parabéns, por comprar 10 platinhas você ganhou 5% de desconto!!");
-
-            System.out.println("O total da sua compra é: " + resultado);
-        } 
-
-        else
-        
-        {
-            System.out.println("O preço total da venda é: " + resultado);
-         
-
-        }
-
-        produtosVetor[index] = "venda " + (index+1) + ": " + quantidade + " unidades " + " R$" + resultado;
-        index++;
+        System.out.println("O preço total da venda é: " + resultado);
 
     }
-
-    
-     
-        
-         
-    public static void verHistorico() {
-    System.out.println("asd");
-        for(int i = 0; i < index; i++){
-        
-        System.out.println(produtosVetor[i]);
-
-        }
-        
-    }
-    
-
 
     public static void calcularTroco() {
 
@@ -110,7 +64,4 @@ public static int index = 0;
         double troco = valorPago - valorTotalCompra;
         System.out.println("O troco a ser dado ao cliente é: " + troco);
     }
-
-   
-    
 }
