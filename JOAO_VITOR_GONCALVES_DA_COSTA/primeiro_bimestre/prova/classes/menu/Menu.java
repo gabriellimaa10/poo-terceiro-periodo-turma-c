@@ -1,13 +1,13 @@
-package JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.menu;
+package prova.classes.menu;
 
 import java.util.Date;
 import java.util.Scanner;
 
-import JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.cliente.Cliente;
-import JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.endereco.Endereco;
-import JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.eventinho.Eventinho;
-import JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.ingresso.Ingresso;
-import JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.limpar_console.LimparConsole;
+import prova.classes.cliente.Cliente;
+import prova.classes.endereco.Endereco;
+import prova.classes.eventinho.Eventinho;
+import prova.classes.ingresso.Ingresso;
+import prova.classes.limpar_console.LimparConsole;
 
 public class Menu {
 

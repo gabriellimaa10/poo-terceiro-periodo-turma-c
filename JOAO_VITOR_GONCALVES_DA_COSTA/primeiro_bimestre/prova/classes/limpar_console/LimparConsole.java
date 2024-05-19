@@ -1,4 +1,4 @@
-package JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.limpar_console;
+package prova.classes.limpar_console;
 
 import java.io.IOException;
 

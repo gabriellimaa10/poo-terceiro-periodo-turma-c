@@ -1,4 +1,4 @@
-package JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.endereco;
+package prova.classes.endereco;
 
 public class Endereco {
   public String rua;

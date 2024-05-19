@@ -1,6 +1,6 @@
-package JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.ingresso;
+package prova.classes.ingresso;
 
-import JOAO_VITOR_GONCALVES_DA_COSTA.prova.classes.eventinho.Eventinho;
+import prova.classes.eventinho.Eventinho;
 
 public class Ingresso {
 
