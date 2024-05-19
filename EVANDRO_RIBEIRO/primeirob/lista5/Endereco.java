@@ -1,14 +1,14 @@
 package lista5;
 
 public class Endereco {
-    
     private String estado;
     private String cidade;
     private String bairro;
-    private int numero;
+    private String numero;
     private String complemento;
 
-    public Endereco(String estado, String cidade, String bairro, int numero, String complemento) {
+    // Construtor
+    public Endereco(String estado, String cidade, String bairro, String numero, String complemento) {
         this.estado = estado;
         this.cidade = cidade;
         this.bairro = bairro;
@@ -16,11 +16,7 @@ public class Endereco {
         this.complemento = complemento;
     }
 
-    public void apresentarLogradouro() {
-        System.out.println(numero + ", " + complemento + ", " + bairro + ", " + cidade + " - " + estado);
-    }
-
-
+    // Getters e Setters
     public String getEstado() {
         return estado;
     }
@@ -45,11 +41,11 @@ public class Endereco {
         this.bairro = bairro;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
@@ -59,5 +55,10 @@ public class Endereco {
 
     public void setComplemento(String complemento) {
         this.complemento = complemento;
+    }
+
+    // Método para apresentar o logradouro de forma interessante
+    public void apresentarLogradouro() {
+        System.out.println("Endereço: " + cidade + ", " + bairro + ", Nº " + numero + " - " + complemento + ", " + estado);
     }
 }

@@ -1,10 +1,8 @@
 package lista5;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 public class Pedido {
-    
     private int id;
     private LocalDate dataCriacao;
     private LocalDate dataPagamento;
@@ -12,32 +10,21 @@ public class Pedido {
     private Cliente cliente;
     private Vendedor vendedor;
     private Loja loja;
-    private ArrayList<Item> itens;
+    private Item[] itens;
 
-    public Pedido(int id, LocalDate dataCriacao, Cliente cliente, Vendedor vendedor, Loja loja, ArrayList<Item> itens) {
+    // Construtor
+    public Pedido(int id, LocalDate dataCriacao, Cliente cliente, Vendedor vendedor, Loja loja, Item[] itens) {
         this.id = id;
         this.dataCriacao = dataCriacao;
+        this.dataPagamento = null;
+        this.dataVencimentoReserva = dataCriacao.plusDays(3); // Data de vencimento da reserva é 3 dias após a criação do pedido
         this.cliente = cliente;
         this.vendedor = vendedor;
         this.loja = loja;
         this.itens = itens;
-        this.dataVencimentoReserva = dataCriacao.plusDays(3);
     }
 
-    public double calcularValorTotal() {
-        double valorTotal = 0;
-        for (Item item : itens) {
-            valorTotal += item.getValor();
-        }
-        return valorTotal;
-    }
-
-    public void gerarDescricaoVenda() {
-        System.out.println("Data de Criação do Pedido: " + dataCriacao);
-        System.out.println("Valor Total do Pedido: " + calcularValorTotal());
-    }
-
-
+    // Getters e Setters
     public int getId() {
         return id;
     }
@@ -94,11 +81,25 @@ public class Pedido {
         this.loja = loja;
     }
 
-    public ArrayList<Item> getItens() {
+    public Item[] getItens() {
         return itens;
     }
 
-    public void setItens(ArrayList<Item> itens) {
+    public void setItens(Item[] itens) {
         this.itens = itens;
+    }
+
+    // Método para calcular o valor total do pedido
+    public double calcularValorTotal() {
+        double total = 0;
+        for (Item item : itens) {
+            total += item.getValor();
+        }
+        return total;
+    }
+
+    // Método para gerar a descrição da venda
+    public String gerarDescricaoVenda() {
+        return "Pedido criado em: " + dataCriacao + "\nValor total do pedido: " + calcularValorTotal();
     }
 }
