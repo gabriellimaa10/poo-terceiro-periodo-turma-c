@@ -1,4 +1,4 @@
-package Dona_Gabi.Myy_Plant;
+package PrimeiroB.Dona_Gabi.Myy_Plant;
 
 public class Cliente extends Pessoa {
     public Cliente(String nome, Integer idade, Endereco endereco) {

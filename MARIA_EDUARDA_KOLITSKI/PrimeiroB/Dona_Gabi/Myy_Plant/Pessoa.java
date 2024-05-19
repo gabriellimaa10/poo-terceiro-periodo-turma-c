@@ -1,4 +1,4 @@
-package Dona_Gabi.Myy_Plant;
+package PrimeiroB.Dona_Gabi.Myy_Plant;
 
 public class Pessoa {
     private String nome;

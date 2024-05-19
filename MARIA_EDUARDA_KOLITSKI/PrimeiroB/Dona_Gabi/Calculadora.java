@@ -1,4 +1,4 @@
-package Dona_Gabi;
+package PrimeiroB.Dona_Gabi;
 
 import java.util.Scanner;
 
