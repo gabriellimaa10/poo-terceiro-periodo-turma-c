@@ -1,4 +1,4 @@
-package atividadeObjeto;
+package primeirob.atividadeObjeto;
 import java.util.*;
 import java.text.ParseException;
 import java.util.Scanner;

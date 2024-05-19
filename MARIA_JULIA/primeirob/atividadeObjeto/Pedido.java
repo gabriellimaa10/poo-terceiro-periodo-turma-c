@@ -1,4 +1,4 @@
-package atividadeObjeto;
+package primeirob.atividadeObjeto;
 // 5. Criar uma classe Pedido com:
 // - Atributos, id, dataCriacao, dataPagamento, dataVencimentoReserva(a reserva vence depois de 3 dias da criação do pedido), cliente, vendedor, Loja e array de itens.
 // - Método calcularValorTotal, retorna o valor total do pedido.

@@ -1,4 +1,4 @@
-package atividadeObjeto;
+package primeirob.atividadeObjeto;
 
 // Para suprir tais novas necessidades, precisamos conseguir, via sistema, representar a empresa, os funcionários e clientes.  
 

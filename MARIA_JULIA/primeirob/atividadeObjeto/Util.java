@@ -1,4 +1,4 @@
-package atividadeObjeto;
+package primeirob.atividadeObjeto;
 // classe criada apenas para estudo e entendimento de DATE
 import java.util.Date;
 public class Util {
